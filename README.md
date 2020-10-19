@@ -2,15 +2,6 @@
 읽은 Paper들을 다음 3가지 관점에서 정리합니다. 1) 저자가 성취하려 한 것 2) 저자의 key approach 3) 뒤이어 읽을 것들  
 
 ## Contents
-1. [Recommender System](#Recommender System)
-
-2. [Natural Language Processing](#Natural Language Processing)
-
-3. [Computer Vision](#Computer Vision)
-
-4. [Etc](#Etc)
-
-
 
 ## Recommender System
 * Kyo-Joong et al., <Personalized news recommendation using classified keywords to capture user preference>, 16th International Conference on Advanced Communication Technology, 2014
@@ -27,7 +18,7 @@
   + 저자가 성취한 것
   Latent factors에 Neural Network를 사용함으로서 Non-linearity를 확보하였고, 이는 기존의 Linear함을 전제로 한 MF보다 성능이 좋다
   + 저자의 Key Approach
-  1. User Historical Data(Implicit Data - 직접적인 별점 아닌 클릭 같은 데이터)를 넣고 DBN 돌린 뒤 Items Embedding 가중치를 곱해서 User-based Neurec Prediction을 함.
+  User Historical Data(Implicit Data - 직접적인 별점 아닌 클릭 같은 데이터)를 넣고 DBN 돌린 뒤 Items Embedding 가중치를 곱해서 User-based Neurec Prediction을 함.
      비슷한 논리로 Item-based NeuRec도 만듬.
   + 뒤이어 읽을 것
   논문에서는 Batch Normalization을 안 했고, 앞으로 해 볼 수도 있다고 했는데 내가 직접 해볼 수도 있음
