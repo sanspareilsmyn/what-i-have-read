@@ -1,8 +1,6 @@
 # what-i-read
 읽은 Paper들을 다음 3가지 관점에서 정리합니다. 1) 저자가 성취하려 한 것 2) 저자의 key approach 3) 뒤이어 읽을 것들  
 
-## Contents
-
 ## Recommender System  
 * Zhang et al., <NeuRec: On Nonlinear Transformation for Personalized Ranking>, IJCAI, 2018
   + 저자가 성취한 것
@@ -14,7 +12,7 @@
   논문에서는 Batch Normalization을 안 했고, 앞으로 해 볼 수도 있다고 했는데 내가 직접 해볼 수도 있음
   예전에 읽고 구현한 PMF랑 성능 차이가 얼마나 날지 직접 실험해보고 싶음
 
-* Kyo-Joong et al., <Personalized news recommendation using classified keywords to capture user preference>, 16th International Conference on Advanced Communication Technology, 2014
+* Kyo-Joong et al., Personalized news recommendation using classified keywords to capture user preference, 16th International Conference on Advanced Communication Technology, 2014
   + 저자가 성취한 것  
   News recommendation (Because it should be very quick, CF is not appropriate)
   + 저자의 Key Approach
