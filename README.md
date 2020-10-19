@@ -1,3 +1,14 @@
+## Contents
+1. [Recommender System](#Recommender-System)
+
+2. [Computer Vision](#Computer-Vision)
+
+3. [Natural Language Processing](#Natural-Language-Processing)
+
+4. [Etc](#Etc)
+
+
+
 ## Recommender System  
 * Zhang et al., <NeuRec: On Nonlinear Transformation for Personalized Ranking>, IJCAI, 2018
   + 저자가 성취한 것
@@ -29,3 +40,26 @@
   AutoEncoder는 MF랑 논리가 되게 비슷해서 성능도 좋을 것 같음. AutoEncoder 자체에 대한 공부 + 추천시스템이 AutoEncoder 적용한 2019년 이후 논문 찾아볼 것
 
   
+## Computer Vision  
+* He et al., <Deep Residual Learning for Image Recognition, CVPR, 2016
+  + 저자가 성취한 것
+  Outperforming ImageNet classification (Won ILSVRC 2015 1st prize)
+  + 저자의 Key Approach
+  Deep residual learning framework 
+  Identity Mapping by shortcuts  
+  1x1 conv for reducing computational costs (Bottleneck)  
+  + 뒤이어 읽을 것  
+  
+* Redmon et al., <You Only Look Once: Unified, Real-Time Object Detection>, CVPR, 2016
+  + 저자가 성취한 것  
+  Classification + Sliding Window의 느린 속도를 극복하고 Object Detection을 Single regression problem with convnet로 바꿈
+  + 저자의 Key Approach  
+  이미지를 그리드로 나누어서, 그리드마다 (B * 5 + C)의 텐서를 부여함 (B : anchor box, C : 분류하고자 하는 클래스)  
+  탁월한 loss function(큰 박스와 작은 박스를 위한 root on w/h  
+  Non-max supression
+  + 뒤이어 읽을 것  
+  연구장학생 프로젝트 때 YOLOv2를 다뤘었는데, 다시 읽으니까 Loss Function이 정말 아름답다. YOLOv4 아직 못 읽어봤는데 읽어야 된다.
+
+## Natural Language Processing
+
+## Etc
