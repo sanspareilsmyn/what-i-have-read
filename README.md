@@ -59,6 +59,14 @@
   Non-max supression
   + 뒤이어 읽을 것  
   연구장학생 프로젝트 때 YOLOv2를 다뤘었는데, 다시 읽으니까 Loss Function이 정말 아름답다. YOLOv4 아직 못 읽어봤는데 읽어야 된다.
+  
+* Howard et al., <MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications>, 2017
+  + 저자가 성취한 것  
+  컴퓨팅 파워가 좋지 않은 기기에서도 돌아갈 수 있도록 ConvNet의 연산량을 줄이면서 성능은 유지  
+  + 저자의 Key Approach  
+  Depthwise Convolution + Pointwise Convolution  
+  + 뒤이어 읽을 것  
+  모델의 경량화에 대한 후속 
 
 ## Natural Language Processing
 
