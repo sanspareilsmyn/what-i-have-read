@@ -67,7 +67,39 @@
   Depthwise Convolution + Pointwise Convolution  
   + 뒤이어 읽을 것  
   모델의 경량화에 대한 후속 
-
+  
+* Chollet, <Xception: Deep Learning with Depthwise Seperable Convolutions>, CVPR, 2017
+  + 저자가 성취한 것  
+  Cross-channel correlation과 Spatial correlation을 분리한 Inception을 응용해서 Xception architecture를 만듬  
+  + 저자의 Key Approach  
+  1x1 Conv로 Cross-channel correlation을 나타내는 channel들을 만든 뒤, 모든 channel을 분리시켜서 3x3 conv에 넣음  
+  => Cross-channel과 Spatial을 완벽하게 분리시킬 수 있다!  
+  => 이 때 이러한 방식이 기존의 depthwise convolution과 다른 건,  
+  1) 1x1 conv 먼저 해서 cross-channel 연산 먼저 함 (vs spatial 3x3 conv 먼저 하고 1x1 conv하는 depthwise conv)    
+  2) 1x1 conv 하고 ReLU에 넣은 다음 3x3 conv를 함 (vs conv 사이에 activation 없음)  
+  + 뒤이어 읽을 것  
+  Open source implementation  
+  
 ## Natural Language Processing
+* Micolov et al., <Distributed Representations of Words and Phrases and their COmpositionality, NIPS, 2013
+  + 저자가 성취한 것  
+  이전에 저자가 발표했던 Skip-gram model을 개선해서 더 성능 좋은 Word/Phrase Embedding을 구현함  
+  + 저자의 Key Approach  
+  1) Negative Sampling : target word 1개와 k개의 negative sample로 hierachical softmax를 대체함. Softmax의 분모에 있던 연산량 많은 항을 n개의 binary classification으로 변환해서 연산량을 줄임  
+  2) Subsampling of Frequent words : the, a, in 같은 frequent word와 rare word의 비대칭을 보정하기 위한 subsampling approach  
+  3) Phrase Skip-Gram : word vector 사이의 linear한 연산이 유의미하다는 것을 이용한 linear structure  
+  + 뒤이어 읽을 것  
+  GloVe 
+
+* Pennington et al., <GloVe: Global Vectors for Word Representations>, 2014
+  + 저자가 성취한 것  
+  기존 word embedding의 두 축인 LSA(Latenet Semantic Analysis)와 Shallow Window-based methods(Word2Vec)을 넘어선 Word embedding method    
+  + 저자의 Key Approach  
+  word vector의 내적과 co-occurence matrix를 모두 활용한 loss function 설정 (유도과정 다시 읽어봐야 됨 다 이해 못함)  
+  + 뒤이어 읽을 것  
+
+
+
+
 
 ## Etc
