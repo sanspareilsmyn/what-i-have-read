@@ -98,7 +98,14 @@
   word vector의 내적과 co-occurence matrix를 모두 활용한 loss function 설정 (유도과정 다시 읽어봐야 됨 다 이해 못함)  
   + 뒤이어 읽을 것  
 
-
+* Bahdanau et al., <Neural Machine Translation By Jointly Learning To Align And Translate, ICLR, 2015
+  + 저자가 성취한 것  
+  기존의 Seq2Seq model의 문제들(Vanishing gradients, 모든 문장을 fixed-length vector로 표현하다보니 긴 문장에서 성능 나빠지는 점)을 개선하기 위해 새로운 모델 아키텍쳐를 도입  
+  + 저자의 Key Approach  
+  Alignment model with Context Vector : Softmax의 결과값으로 표현되는 BRNN Encoder의 weighted sum을 Y를 선택하는 데 사용하는 아이디어.  
+  이렇게 하면 decoder 단에서 source sentence의 어떤 부분에 pay attention을 해야 하는지 계산되기 때문에 fixed input vector를 넣을 필요가 없어짐
+  + 뒤이어 읽을 것  
+  Attention is all you need, BERT, Transformer 최신 연구 동향 등
 
 
 
