@@ -105,8 +105,18 @@
   Alignment model with Context Vector : Softmax의 결과값으로 표현되는 BRNN Encoder의 weighted sum을 Y를 선택하는 데 사용하는 아이디어.  
   이렇게 하면 decoder 단에서 source sentence의 어떤 부분에 pay attention을 해야 하는지 계산되기 때문에 fixed input vector를 넣을 필요가 없어짐
   + 뒤이어 읽을 것  
-  Attention is all you need, BERT, Transformer 최신 연구 동향 등
-
-
+  Attention is all you need, BERT, Transformer 최신 연구 동향 등. 
+  
+* Vaswani et al., <Attention Is All You Need>, NIPS, 2017
+  + 저자가 성취한 것  
+  혁명적인 시도. Recurrent Network 구조를 버리고 Attention만으로 Transformer라는 새로운 아키텍처를 만들어서 Machine Translation에서 뛰어난 성능을 보임
+  + 저자의 Key Approach  
+  1) Scaled Dot-Product attention : Product attention은 원래 Attention이랑 같은데 1/루트 dk 항을 넣어서 dot product가 커질 때 gradient 크기 작아지는 것을 보정  
+  2) Multi-Head Attention  
+  Attention을 한번만 하는 게 아니라 V, K, Q를 Linear Layer에 넣고 여러 값으로 바꾼 뒤에 h번 진행 후 concatenation  
+  3) Masked Multi-Head Attention  
+  이전의 결과값에 대한 Attention을 취하기 위해 마스크 행렬 윗단을 -inf로 세팅하고 곱해주는 작업
+  + 뒤이어 읽을 것  
+  Transformer를 개선한 예시, Transformer와 Recommender System의 결합의 예
 
 ## Etc
