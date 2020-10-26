@@ -107,7 +107,7 @@
   + 뒤이어 읽을 것  
   Attention is all you need, BERT, Transformer 최신 연구 동향 등. 
   
-* Vaswani et al., <Attention Is All You Need>, NIPS, 2017
+* Vaswani et al., <Attention Is All You Need , NIPS, 2017
   + 저자가 성취한 것  
   혁명적인 시도. Recurrent Network 구조를 버리고 Attention만으로 Transformer라는 새로운 아키텍처를 만들어서 Machine Translation에서 뛰어난 성능을 보임
   + 저자의 Key Approach  
