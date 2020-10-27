@@ -10,7 +10,7 @@
 
 
 ## Recommender System  
-* Zhang et al., <NeuRec: On Nonlinear Transformation for Personalized Ranking>, IJCAI, 2018
+* Zhang et al., "NeuRec: On Nonlinear Transformation for Personalized Ranking", IJCAI, 2018
   + 저자가 성취한 것
   Latent factors에 Neural Network를 사용함으로서 Non-linearity를 확보하였고, 이는 기존의 Linear함을 전제로 한 MF보다 성능이 좋다
   + 저자의 Key Approach
@@ -21,7 +21,7 @@
   예전에 읽고 구현한 PMF랑 성능 차이가 얼마나 날지 직접 실험해보고 싶음  
   Evaluation Metrics 정리 잘 되어 있어서 나중에 플젝 할 때 참고
 
-* Kyo-Joong et al., Personalized news recommendation using classified keywords to capture user preference, 16th International Conference on Advanced Communication Technology, 2014
+* Kyo-Joong et al., "Personalized news recommendation using classified keywords to capture user preference", 16th International Conference on Advanced Communication Technology, 2014
   + 저자가 성취한 것  
   News recommendation (Because it should be very quick, CF is not appropriate)
   + 저자의 Key Approach
@@ -31,7 +31,7 @@
   + 뒤이어 읽을 것들
   DBN 썼는데 비슷한 데이터셋으로 더 좋은 architecture를 쓴 연구자료를 찾아봐야 될 듯  
   
-* Sedhain et al., <AutoRec: Autoencoders Meet Collaborative Filtering>, WWW, 2015
+* Sedhain et al., "AutoRec: Autoencoders Meet Collaborative Filtering", WWW, 2015
   + 저자가 성취한 것  
   AutoEncoder를 Collaborative Filtering에 적용
   + 저자의 Key Approach
@@ -39,9 +39,15 @@
   + 뒤이어 읽을 것
   AutoEncoder는 MF랑 논리가 되게 비슷해서 성능도 좋을 것 같음. AutoEncoder 자체에 대한 공부 + 추천시스템이 AutoEncoder 적용한 2019년 이후 논문 찾아볼 것
 
+* Vinh Vo et al., "Generation Meets Recommendation: Proposing Novel Items for Group of Users", RecSyS, 2018
+  + 저자가 성취한 것
+  Variational AutoEncoder와 기존 유저들의 Embedding을 활용해서 Novel Item Embedding을 생성해 냄. 있는 Embedding을 예측하는 것이 아니라 있음직한 Embedding을 생성해낸 것이 키포인트. 
+  + 저자의 Key Approach
+  VAE를 이용함. Embedding space Z 위에서 Encoder와 Decoder를 학습시키는데, 생성한 embedding vector가 specifit rating function 연산의 최댓값을 만족하도록 training  
+  + 뒤이어 읽을 것  
   
 ## Computer Vision  
-* He et al., <Deep Residual Learning for Image Recognition, CVPR, 2016
+* He et al., "Deep Residual Learning for Image Recognition", CVPR, 2016
   + 저자가 성취한 것
   Outperforming ImageNet classification (Won ILSVRC 2015 1st prize)
   + 저자의 Key Approach
@@ -50,7 +56,7 @@
   1x1 conv for reducing computational costs (Bottleneck)  
   + 뒤이어 읽을 것  
   
-* Redmon et al., <You Only Look Once: Unified, Real-Time Object Detection>, CVPR, 2016
+* Redmon et al., "You Only Look Once: Unified, Real-Time Object Detection", CVPR, 2016
   + 저자가 성취한 것  
   Classification + Sliding Window의 느린 속도를 극복하고 Object Detection을 Single regression problem with convnet로 바꿈
   + 저자의 Key Approach  
@@ -60,7 +66,7 @@
   + 뒤이어 읽을 것  
   연구장학생 프로젝트 때 YOLOv2를 다뤘었는데, 다시 읽으니까 Loss Function이 정말 아름답다. YOLOv4 아직 못 읽어봤는데 읽어야 된다.
   
-* Howard et al., <MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications>, 2017
+* Howard et al., "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", 2017
   + 저자가 성취한 것  
   컴퓨팅 파워가 좋지 않은 기기에서도 돌아갈 수 있도록 ConvNet의 연산량을 줄이면서 성능은 유지  
   + 저자의 Key Approach  
@@ -68,7 +74,7 @@
   + 뒤이어 읽을 것  
   모델의 경량화에 대한 후속 
   
-* Chollet, <Xception: Deep Learning with Depthwise Seperable Convolutions>, CVPR, 2017
+* Chollet, "Xception: Deep Learning with Depthwise Seperable Convolutions", CVPR, 2017
   + 저자가 성취한 것  
   Cross-channel correlation과 Spatial correlation을 분리한 Inception을 응용해서 Xception architecture를 만듬  
   + 저자의 Key Approach  
@@ -80,8 +86,16 @@
   + 뒤이어 읽을 것  
   Open source implementation  
   
+* Girshick et al., "Rich feature hierarchies for accurate object detection and semantic segmantaion", CVPR, 2014
+  + 저자가 성취한 것  
+  2-stage-detector의 서막. R-CNN(Regions with CNN features)  
+  + 저자의 Key Approach  
+  전처리 된 이미지로부터 proposal region을 추출하는 것이 첫 번째 CNN. 이 영역들의 feature들을 추출하는 것이 두 번째 CNN. 이렇게 나온 feature들을 SVM으로 classification 
+  + 뒤이어 읽을 것  
+  Faster-R-CNN에서 이 두 개의 CNN을 어떻게 하나로 통합하면서도 2-stage-detector의 architecture를 유지하는지 다시 검토   
+  
 ## Natural Language Processing
-* Micolov et al., <Distributed Representations of Words and Phrases and their COmpositionality, NIPS, 2013
+* Micolov et al., "Distributed Representations of Words and Phrases and their COmpositionality", NIPS, 2013
   + 저자가 성취한 것  
   이전에 저자가 발표했던 Skip-gram model을 개선해서 더 성능 좋은 Word/Phrase Embedding을 구현함  
   + 저자의 Key Approach  
@@ -91,14 +105,14 @@
   + 뒤이어 읽을 것  
   GloVe 
 
-* Pennington et al., <GloVe: Global Vectors for Word Representations>, 2014
+* Pennington et al., "GloVe: Global Vectors for Word Representations", 2014
   + 저자가 성취한 것  
   기존 word embedding의 두 축인 LSA(Latenet Semantic Analysis)와 Shallow Window-based methods(Word2Vec)을 넘어선 Word embedding method    
   + 저자의 Key Approach  
   word vector의 내적과 co-occurence matrix를 모두 활용한 loss function 설정 (유도과정 다시 읽어봐야 됨 다 이해 못함)  
   + 뒤이어 읽을 것  
 
-* Bahdanau et al., <Neural Machine Translation By Jointly Learning To Align And Translate, ICLR, 2015
+* Bahdanau et al., "Neural Machine Translation By Jointly Learning To Align And Translate", ICLR, 2015
   + 저자가 성취한 것  
   기존의 Seq2Seq model의 문제들(Vanishing gradients, 모든 문장을 fixed-length vector로 표현하다보니 긴 문장에서 성능 나빠지는 점)을 개선하기 위해 새로운 모델 아키텍쳐를 도입  
   + 저자의 Key Approach  
@@ -107,7 +121,7 @@
   + 뒤이어 읽을 것  
   Attention is all you need, BERT, Transformer 최신 연구 동향 등. 
   
-* Vaswani et al., <Attention Is All You Need , NIPS, 2017
+* Vaswani et al., "Attention Is All You Need" , NIPS, 2017
   + 저자가 성취한 것  
   혁명적인 시도. Recurrent Network 구조를 버리고 Attention만으로 Transformer라는 새로운 아키텍처를 만들어서 Machine Translation에서 뛰어난 성능을 보임
   + 저자의 Key Approach  
