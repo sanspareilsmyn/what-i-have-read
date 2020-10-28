@@ -46,6 +46,13 @@
   VAE를 이용함. Embedding space Z 위에서 Encoder와 Decoder를 학습시키는데, 생성한 embedding vector가 specifit rating function 연산의 최댓값을 만족하도록 training  
   + 뒤이어 읽을 것  
   
+* Loepp et al., "Impact of Item Consumption on Assessment of Recommendations in User Studies", RecSyS, 2018
+  + 저자가 성취한 것
+  실제 추천 시스템에 의해 추천된 물건이 소비되었을 때 사용자에게 미치는 영향에 대해 Movie/Music case로 나누어 탐구
+  + 저자의 Key Approach
+  영화와 음악으로 나누어서 살펴보았는데, 음악의 경우 추천시스템에 의한 선곡이 실제로 재생될 수 있는 경우와 없는 경우의 별점 상관관계를 보았고, 영화 역시 보고난 후와 뒤의 상관관계를 시간을 두고 살펴봄
+  + 뒤이어 읽을 것  
+  
 ## Computer Vision  
 * He et al., "Deep Residual Learning for Image Recognition", CVPR, 2016
   + 저자가 성취한 것
@@ -93,6 +100,14 @@
   전처리 된 이미지로부터 proposal region을 추출하는 것이 첫 번째 CNN. 이 영역들의 feature들을 추출하는 것이 두 번째 CNN. 이렇게 나온 feature들을 SVM으로 classification 
   + 뒤이어 읽을 것  
   Faster-R-CNN에서 이 두 개의 CNN을 어떻게 하나로 통합하면서도 2-stage-detector의 architecture를 유지하는지 다시 검토   
+  
+* Lin et al., "Focal Loss for Dense Object Detection", ICCV, 2017
+  + 저자가 성취한 것  
+  1-stage-detector로 2-stage-detector 수준의 성능을 얻기 위해 Class Imbalance 문제를 해결한 것
+  + 저자의 Key Approach  
+  Loss function을 Focal Loss라는 개념으로 보정하면서, correctly classified situation에서 loss값을 줄여주었음  
+  + 뒤이어 읽을 것  
+  다른 논문에서도 Feature Pyramid Network(FPN) 개념이 계속 등장하던데, 이거 따로 읽은 다음에 다시 읽어봐야 됨     
   
 ## Natural Language Processing
 * Micolov et al., "Distributed Representations of Words and Phrases and their COmpositionality", NIPS, 2013
