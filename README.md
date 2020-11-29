@@ -110,7 +110,7 @@
   다른 논문에서도 Feature Pyramid Network(FPN) 개념이 계속 등장하던데, 이거 따로 읽은 다음에 다시 읽어봐야 됨     
   
 ## Natural Language Processing
-* Micolov et al., "Distributed Representations of Words and Phrases and their COmpositionality", NIPS, 2013
+* Micolov et al., "Distributed Representations of Words and Phrases and their Compositionality", NIPS, 2013
   + 저자가 성취한 것  
   이전에 저자가 발표했던 Skip-gram model을 개선해서 더 성능 좋은 Word/Phrase Embedding을 구현함  
   + 저자의 Key Approach  
