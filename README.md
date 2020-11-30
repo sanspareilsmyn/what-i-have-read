@@ -148,4 +148,14 @@
   + 뒤이어 읽을 것  
   Transformer를 개선한 예시, Transformer와 Recommender System의 결합의 예
 
+* Devlin et al., "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", 2019. 
+  + 저자가 성취한 것  
+  Masked LM과 Next Sentence Prediction(NSP)를 활용한 Bidirectional Transformer로 Fine-Tuning Based Language Model를 만듬.  
+  + 저자의 Key Approach  
+  1) Masked LM : WordPiece 기반의 Embedding으로 15%는 MASK Embedding. 80%는 [MASK] Token, 10%는 Unchanged, 10%는 Random
+  2) NSP : 두 개의 문장을 이어서 동시에 트레이닝. 절반은 연관 있고 절반은 연관 없음.  
+  3) Fine-Tuning Approach : General한 Language Model. 여러 가지의 Task를 윗단의 Layer만 튜닝해서 사용할 수 있도록 Pre-Training / Fine-Tuning 단계를 나눔
+  + 뒤이어 읽을 것  
+  GPT-3  
+
 ## Etc
