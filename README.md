@@ -159,3 +159,11 @@
   GPT-3  
 
 ## Etc
+* Prokhorenkova et al., "CatBoost: unbiased boosting with categorical features", NeurIPS,  2018. 
+  + 저자가 성취한 것  
+  기존의 GBM, XGBoost가 가지고 있던 Prediction Shift 문제를 극복하여 더 빠르고 더 성능좋은 Boosting 알고리즘을 제시함.  
+  + 저자의 Key Approach  
+  1) Categorical Features : Permuation 기반의 Ordered Target Statistics(TS)
+  2) Ordered Boosting : Permutation 기반의 split으로 이전의 데이터만으로 boosting 진행
+  + 뒤이어 읽을 것  
+  PyData 2018 London에서의 CatBoost 튜토리얼 영상 보고 실습하기      
