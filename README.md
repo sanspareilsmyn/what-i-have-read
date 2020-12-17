@@ -109,12 +109,12 @@
   + 뒤이어 읽을 것  
   다른 논문에서도 Feature Pyramid Network(FPN) 개념이 계속 등장하던데, 이거 따로 읽은 다음에 다시 읽어봐야 됨     
   
- * Dong et al., "Accelerating the Super-Resolution Convolutional Neural Network", ECCV, 2016
+* Dong et al., "Accelerating the Super-Resolution Convolutional Neural Network", ECCV, 2016
   + 저자가 성취한 것  
   기존의 SRCNN보다 더 빠른 FSRCNN을 제안
   + 저자의 Key Approach  
-  1) Interpolation을 하지 않고 원래의 Image를 바로 사용.  
-  2) HR Feature를 여러 Layer로 쪼갬
+  1) No Preprocessing. Interpolation을 하지 않고 원래의 Image를 바로 사용.  
+  2) 기존의 Non-linear mapping의 연산량 줄이기 위해 Shrinking-Mapping-Expanding architecture로 쪼갬
   + 뒤이어 읽을 것  
   
 ## Natural Language Processing
