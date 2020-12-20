@@ -117,6 +117,14 @@
   2) 기존의 Non-linear mapping의 연산량 줄이기 위해 Shrinking-Mapping-Expanding architecture로 쪼갬
   + 뒤이어 읽을 것  
   
+* Zhu et al., "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks", ICCV, 2017   
+  + 저자가 성취한 것  
+  Cycle-consistency loss 기반의 Generative Autoencoder를 사용하여 Pair-wise Dataset 없이 Image Translation 수행하는 테크닉 발견    
+  + 저자의 Key Approach  
+  Cycle Consistency Loss : X에서 Y로 가는 사상 G, Y에서 X로 가는 사상 F, 그리고 X와 Y의 Discriminator를 Cyclic하게 결합한 minmax problem  
+  + 뒤이어 읽을 것  
+  의류 데이터를 크롤링해서 직접 데이터셋을 만들고 패션 쪽에 적용해보는 플젝 해보고 싶어  
+  
 ## Natural Language Processing
 * Micolov et al., "Distributed Representations of Words and Phrases and their Compositionality", NIPS, 2013
   + 저자가 성취한 것  
