@@ -117,6 +117,14 @@
   2) 기존의 Non-linear mapping의 연산량 줄이기 위해 Shrinking-Mapping-Expanding architecture로 쪼갬
   + 뒤이어 읽을 것  
   
+* Radford et al., "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks", ICLR, 2016
+  + 저자가 성취한 것  
+  Convolutional GAN을 이용해 이미지를 생성 및 이미지의 vectorization
+  + 저자의 Key Approach  
+  1) Conv/DeConv 4개 Layer로 구성된 Discriminator와 Generator  
+  2) DCGANs capabilities에 대한 Emperical Validation
+  + 뒤이어 읽을 것  
+  
 * Zhu et al., "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks", ICCV, 2017   
   + 저자가 성취한 것  
   Cycle-consistency loss 기반의 Generative Autoencoder를 사용하여 Pair-wise Dataset 없이 Image Translation 수행하는 테크닉 발견    
