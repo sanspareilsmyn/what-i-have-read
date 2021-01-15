@@ -133,6 +133,14 @@
   + 뒤이어 읽을 것  
   의류 데이터를 크롤링해서 직접 데이터셋을 만들고 패션 쪽에 적용해보는 플젝 해보고 싶어  
   
+* Zhang et al., "Self-Attention Generative Adversarial Network", ICCV, 2018   
+  + 저자가 성취한 것  
+  Self-Attention을 이용해 Non-local한 Information을 반영한 GAN으로 Inception Score / FID를 높임.      
+  + 저자의 Key Approach  
+  Self-Attention / Spectral Normalization  
+  + 뒤이어 읽을 것  
+      
+  
 ## Natural Language Processing
 * Micolov et al., "Distributed Representations of Words and Phrases and their Compositionality", NIPS, 2013
   + 저자가 성취한 것  
